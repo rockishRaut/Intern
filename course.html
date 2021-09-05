@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="viewport" content="with=device-width, initial-scale=1.0">
+    <title>
+        College Website Design
+    </title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Besley:wght@500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+    <section class="sub-header">
+        <nav>
+            <a href="home.html"><img src="images/logo.png"></a>
+            <div class="nav-links" id="navLinks">
+                <i class="fa fa-times" onclick="hideMenu()"></i>
+                <ul>
+                    <li><a href="home.html">HOME</a></li>
+                    <li><a href="about.html">ABOUT</a></li>
+                    <li><a href="course.html">COURSE</a></li>
+                    <li><a href="blog.html">BLOG</a></li>
+                    <li><a href="contact.html">CONTACT</a></li>
+
+
+                </ul>
+            </div>
+            <i class="fa fa-bars" onclick="showMenu()"></i>
+
+        </nav>
+
+        <h1>Our Courses</h1>
+
+    </section>
+
+    <!-- course -->
+
+    <section class="course">
+        <h1>Courses we offer</h1>
+        <p>We offer the International course for BBA and BIT with the world class teaching equipment and facilities.</p>
+    
+        <div class="row">
+            <div class="course-col">
+                <h3> BIT </h3>
+                <p>BIT is the Computing Course which is also called Computing Hons.</p>
+            </div>
+            <div class="course-col">
+                <h3> BBA </h3>
+                <p>BBA is the business Course where you can learn a way to handle your business</p>
+            </div>
+            
+        </div>
+    
+    </section>
+
+<!-- facilities -->
+    <section class="facilities">
+        <h1>Our Facilities</h1>
+        <p>we have got different facilities, just have a look</p>
+    
+        <div class="row">
+            <div class="facilities-col">
+                <img src="images/library.jpg">
+                <h3>World Class library</h3>
+                <p>We got really standard library with all most of the books available.</p>
+            </div>
+            <div class="facilities-col">
+                <img src="images/footsall.jpg">
+                <h3>Nice footsall Field</h3>
+                <p>We got a footsall field and our team participated and won the tournament held in Dharan.</p>
+            </div>
+            <div class="facilities-col">
+                <img src="images/basketball.png">
+                <h3>BasketBall Court</h3>
+                <p>BasketBall is also a game you can play in IIC.</p>
+            </div>
+        </div>
+    </section>
+    
+
+
+
+
+
+<!------------  Footer ----------->
+<section class="fotter">
+    <h4>About us</h4>
+    <p>ITAHARI International College is one of the 5 ING group college of nepal, 
+        <br> which provides the International degree certificate just by studying from Nepal.</p>
+        <div class="icons">
+            <i class="fa fa-facebook"></i>
+            <i class="fa fa-instagram"></i>
+            <i class="fa fa-twitter"></i>
+            <i class="fa fa-linkedin"></i>
+
+            <p>Made By Rakish Raut</p>
+        </div>
+</section>
+
+
+
+
+
+    <!--------- java Scrpit for menu ----------->
+<script>
+    var navLinks = document.getElementById("navLinks");
+
+    function showMenu(){
+        navLinks.style.right = "0";
+    }
+    function hideMenu(){
+        navLinks.style.right = "-200px";
+    }
+</script>
+
+
+</body>
+
+</html>
